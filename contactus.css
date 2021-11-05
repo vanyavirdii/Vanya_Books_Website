@@ -1,0 +1,108 @@
+body {
+	margin: auto;
+    color: #000;
+	font-family: 'PT Sans', sans-serif;
+}
+
+.wrapper {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: auto;
+	grid-template-areas:
+	"nav nav nav"
+	"logo banner image"
+    "blank blank blank";	
+}
+
+.hello {
+  grid-area: blank;
+  height: 7px;
+}
+
+.contact {
+	width: 100%;
+	background-color: #DE9C9C;
+	border-radius: 12%;
+}	
+
+.row {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: auto;
+	grid-template-areas:
+    	"center center right"
+    	"footer footer footer";
+  	column-gap: 20px;
+	row-gap: 7px;
+}
+
+.image-circle {
+	border-radius: 50%;
+	max-width: 85%;
+	height: auto;
+	box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.8);
+}
+
+.box {
+	padding: 20px;
+	background-color: #ddd;
+ 
+}
+
+.nav {
+	grid-area: nav;
+	background-color: #A51D47; 
+	font-size: 150%;
+	text-align: center;
+	height: 20px;
+}
+
+.image {
+	grid-area: image;
+	background-color: #722A17;
+	height: 199px;
+	padding: 0;
+	text-align: right;
+}
+
+.banner {
+	grid-area: banner;
+	background-color: #722A17;
+	text-align: center;
+	color: #fff;
+}
+
+
+.right {
+	grid-area: right;
+	background-color: #361D00;   
+	color: #fff;
+	column-gap: 5px;
+	text-align: center;
+}
+
+.center {
+	grid-area: center;
+	background-color: #BC5E82;
+	grid-gap: 4px;
+	text-align: center;
+}
+
+.logo {
+	grid-area: logo;
+	background-color: #722A17;
+	padding: 0;
+	height: 199px;
+}
+
+.footer {
+	grid-area: footer;
+	background-color: #691E35;
+	text-align: right;
+	color: #fff;
+}
+
+h1, h2, h3, h4 {
+	font-family: 'Dela Gothic One', cursive;
+}
+

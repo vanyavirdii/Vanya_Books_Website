@@ -1,0 +1,145 @@
+body {
+	margin: auto;
+    color: #000;
+	font-family: 'PT Sans', sans-serif;
+}
+
+.wrapper {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: auto;
+	grid-template-areas:
+	"nav nav nav"
+	"logo banner image"
+    "blank blank blank";
+}
+
+.hello {
+  grid-area: blank;
+  height: 7px;
+}
+
+.whole {
+  display: grid;
+  grid-template-columns: auto;
+	grid-template-rows: auto;
+	grid-template-areas:
+    "wrapper"
+    "row";
+}
+
+.row {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: auto;
+	grid-template-areas:
+    	"left center right"
+    	"footer footer footer";
+  	column-gap: 20px;
+	row-gap: 7px;
+	object-fit: fill;
+}
+
+.image-circle {
+	border-radius: 50%;
+	max-width: 85%;
+}
+
+.box {
+	padding: 20px;
+	background-color: #ddd;
+ 
+}
+
+.nav {
+	grid-area: nav;
+	background-color: #A51D47; 
+	font-size: 150%;
+	text-align: center;
+	height: 20px;
+}
+
+.image {
+	grid-area: image;
+	background-color: #722A17;
+	height: 199px;
+	padding: 0;
+	text-align: right;
+}
+
+.banner {
+	grid-area: banner;
+	background-color: #722A17;
+	text-align: center;
+	color: #fff;
+
+}
+
+.left {
+	grid-area: left;
+	color: #fff;
+	text-align: center;
+	background-color: #BC7A68;
+}
+
+.left:hover {
+	background-color: #000000;
+	color: #fff;
+}
+
+.right {
+	grid-area: right;
+	color: #fff;
+	column-gap: 5px;
+	text-align: center;
+	background-color: #361D00;
+}
+
+.right:hover {
+	background-color: #000000;
+	color: #fff;
+}
+
+.center {
+	grid-area: center;
+	grid-gap: 4px;
+	text-align: center;
+	color: #fff;
+	background-color: #BC5E82;
+}
+
+.center:hover {
+	background-color: #000000;
+	color: #fff;
+}
+
+.logo {
+	grid-area: logo;
+	background-color: #722A17;
+	padding: 0;
+	height: 199px;
+}
+
+.footer {
+	grid-area: footer;
+	background-color: #691E35;
+	text-align: right;
+	color: #fff;
+}
+
+h1, h2, h3, h4 {
+	font-family: 'Dela Gothic One', cursive;
+}
+
+.nav a {font-weight: bold;}
+.nav a:link, .nav a:visited {color: #FFCEF8;}
+.nav a:hover {
+	text-decoration: none;
+	color: #fff;
+}
+
+.row a:link {text-decoration: none;}
+.row a:hover {
+	background-color: #000000;
+	color: #fff;
+}
